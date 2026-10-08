@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: f5f5f5;
+}
+/* 관리자 페이지 영역 */
+.admin {
+  width: 1000px;
+  margin: 50px auto;
+  /* background-color: peachpuff; */
+}
+.admin h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+table {
+  width: 100%;
+  /* 테두리가 겹치는 것을 하나로 합침 */
+  border-collapse: collapse;
+  background-color: powderblue;
+}
+/* 제목 데이터 칸 */
+th,
+td {
+  padding: 15px;
+  border: 1px solid dodgerblue;
+  text-align: center;
+}
+th {
+  background-color: skyblue;
+}
+tbody tr:hover {
+  cursor: pointer;
+  background-color: #f5f5f5;
+}
+/* 배송완료 */
+.complete {
+  font-weight: bold;
+  color: blue;
+}
+/* 배송중 */
+.delivery {
+  font-weight: bold;
+  color: dodgerblue;
+}
+/* 배송준비중 */
+.ready {
+  font-weight: bold;
+  color: deepskyblue;
+}

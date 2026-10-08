@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 문의하기 영역 */
+.contact-form {
+  width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 10px;
+  /* text-align: center; */
+  background-color: plum;
+}
+/* 제목 */
+.contact-form h2 {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+/* 이름 */
+.contact-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+/* 내용 */
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  /* all: unset; */
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 13px;
+  font-size: 12px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 10px;
+  color: #333;
+  background-color: #fff;
+}
+.contact-form textarea {
+  height: 150px;
+  /* 입력 내용이 길어지면 스크롤 */
+  resize: vertical;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #333;
+  font-size: 12px;
+}
+.contact-form button {
+  all: unset;
+  padding: 10px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  color: plum;
+  border-radius: 10px;
+  background-color: #333;
+}
+.contact-form button:hover {
+  background-color: #555;
+  cursor: pointer;
+}

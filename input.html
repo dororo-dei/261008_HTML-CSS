@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form 태그</title>
+  </head>
+  <body>
+    <form>
+      <!-- 글자를 입력 -->
+      <input type="text" placeholder="이메일" />
+      <!-- 비밀번호 입력 -->
+      <input type="password" placeholder="비밀번호" required />
+      <!-- 이메일 -->
+      <!-- name: 데이터를 전송할 때 사용하는 이름 -->
+      <input type="email" placeholder="이메일" name="email" />
+      <!-- 전화번호 입력 -->
+      <input type="tel" placeholder="000-0000-0000" />
+      <!-- 숫자 입력 -->
+      <input type="number" min="1" max="10" />
+      <!-- 인터넷 주소 입력 -->
+      <input type="url" placeholder="https://example.com" />
+      <input type="search" placeholder="검색" />
+      <!-- 네모: 여러개 선택 -->
+      <input type="checkbox" checked />
+      <input type="checkbox" />
+      <input type="checkbox" />
+      <!-- 동그라미: 하나만 선택 -->
+      <input type="radio" name="gender" />
+      <input type="radio" name="gender" />
+      <input type="radio" name="gender" />
+      <!-- 파일 선택 -->
+      <input type="file" />
+      <!-- 그냥 버튼(눌러도 아무 일도 안일어남) -->
+      <input type="button" value="로그인" />
+      <button type="submit">제출</button>
+      <!-- 사진모양의 버튼 -->
+      <input type="image" src="img/google.png" />
+      <!-- 화면에 안 보이지만 몰래 값을 저장하는 칸 -->
+      <input type="hidden" />
+
+      <!-- 날짜선택 -->
+      <input type="date" />
+      <!-- 날짜랑 시간을 같이 선택 -->
+      <input type="datetime-local" />
+      <!-- 연도와 월을 선택 -->
+      <input type="month" />
+      <!-- 몇번째 주 선택 -->
+      <input type="week" />
+      <!-- 시간 선택 -->
+      <input type="time" />
+      <!-- 막대를 움직여서 값 선택 -->
+      <input type="range" />
+      <!-- 색 선택 -->
+      <input type="color" />
+      <!-- 글쓰기 -->
+      <textarea></textarea>
+      
+      <!-- 선택태그 -->
+      <!-- size: 보이는 갯수 -->
+      <select size="3">
+        <option value="apple">사과</option>
+        <option value="banana">바나나</option>
+        <option value="grape" selected>포도</option>
+        <option value="mango">망고</option>
+      </select>
+      <!-- 여러개 선택하기 -->
+      <!-- disabled : 비활성 선택못함 -->
+      <select multiple>
+        <option value="">축구</option>
+        <option value="">야구</option>
+        <option value="">수영</option>
+        <option value="">스키</option>
+        <option value="" disabled>농구(마감)</option>
+        <option value="">하키</option>
+      </select>
+      <!-- 옵션들을 그룹으로 만들기 -->
+      <select>
+        <!-- 서울시 -->
+        <optgroup label="서울시">
+          <option value="">강북구</option>
+          <option value="">서초구</option>
+          <option value="">강서구</option>
+        </optgroup>
+        <!-- 경기도 -->
+        <optgroup label="경기도">
+          <option value="">중원구</option>
+          <option value="">분당구</option>
+        </optgroup>
+        <!-- 대구 -->
+        <optgroup label="대구">
+          <option value="">북구</option>
+          <option value="">수성구</option>
+          <option value="">중구</option>
+        </optgroup>
+      </select>
+    </form>
+  </body>
+</html>
